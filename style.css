@@ -1,0 +1,61 @@
+.container{
+            background-color: black;
+            width:100vw;
+            height:100vh;
+        }
+        .box1{
+            background-color: white;
+            width:100px;
+            height:100px;
+            border-radius: 100px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            animation: animationy 1s ease-out infinite alternate;
+            
+
+
+        }
+        .box2{
+            background-color: blue;
+            width:100px;
+            height:100px;
+            border-radius: 100px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            animation: animationy 1s ease-out infinite alternate ,animationx 3s linear infinite alternate;
+
+
+        }
+        .box3{
+            background-color: white;
+            width:100px;
+            height:100px;
+            border-radius: 100px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            animation: animationy 1s ease-out infinite alternate;
+
+        }
+        @keyframes animationx{
+            from{
+                left: 0%;
+
+            }
+            to{
+                left: 95%;
+
+            }
+        }
+        @keyframes animationy{
+            from{
+                bottom: 0%;
+
+            }
+            to{
+                bottom: 80%;
+            }
+             
+        }
